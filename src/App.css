@@ -7,11 +7,16 @@
   justify-content: center;
 }
 
+
+/*https://www.w3schools.com/css/css_positioning.asp*/
 .particles {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
+
+  /*what layer you want to image to be on that*/
+  z-index: -1;  
+
 }

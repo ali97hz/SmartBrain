@@ -12,9 +12,11 @@ import './App.css';
 
 //You must add your own API key here from Clarifai.
 const app = new Clarifai.App({
- apiKey: 'YOUR_API_HERE'
+ apiKey: 'd179e8c9cb4b4feaa5dbbe8375a833d6'
 });
 
+
+// tanzimat tilt ro chegali va ... az inja tanzim mishe
 const particlesOptions = {
   particles: {
     number: {
@@ -30,6 +32,7 @@ const particlesOptions = {
 class App extends Component {
   constructor() {
     super();
+    // state baraye inke App befahme chi vared shode to input
     this.state = {
       input: '',
       imageUrl: '',
@@ -73,10 +76,11 @@ class App extends Component {
     this.setState({box: box});
   }
 
+  // tabe neveshtim vase input:'' ke on bala bod to state
   onInputChange = (event) => {
     this.setState({input: event.target.value});
   }
-
+  //onImageSubmit
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
     app.models
